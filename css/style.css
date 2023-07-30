@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  --nav-bg-color: #ececec;
+  --desc-font-color: #757575;
+  --title-font-color: #212121;
+  --team-bg-color: #f5f4fa;
+  --title-bg-color: #2f303a;
+  --blue-font-color: #2196f3;
+  --foot-font-color: rgba(255, 255, 255, 0.6);
+  --card-portfolio-border: #eeeeee;
+}
+body {
+  background-color: #ffffff;
+  color: var(--title-font-color);
+  font-family: 'Roboto', 'Raleway', sans-serif;
+}
+h1 {
+  color: #ffffff;
+}
+h2 {
+  color: var(--title-font-color);
+}
+p {
+  color: var(--desc-font-color);
+}
+li {
+  list-style: none;
+}
+button {
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+a:link {
+  text-decoration: none;
+  background-color: transparent;
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+}
+.logo a {
+  color: var(--blue-font-color);
+}
+.nav-page a {
+  color: var(--title-font-color);
+  text-decoration: none;
+}
+.nav-contact a {
+  color: var(--desc-font-color);
+  text-decoration: none;
+}
+.nav-page a:hover {
+  color: var(--blue-font-color);
+  background-color: transparent;
+  text-decoration: none;
+}
+.nav-contact a:hover {
+  color: var(--blue-font-color);
+  background-color: transparent;
+  text-decoration: none;
+}
+.solution {
+  background-color: var(--title-bg-color);
+}
+.contact-info {
+  background-color: var(--title-bg-color);
+}
+.btn-sol {
+  background-color: var(--blue-font-color);
+  color: var(--team-bg-color);
+  width: 261px;
+  height: 50px;
+}
+.team-card li {
+  border: 1px;
+  width: 270px;
+  height: 368px;
+  border-style: solid;
+  border-color: var(--card-portfolio-border);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card h3 {
+  color: var(--title-font-color);
+}
+.address {
+  color: #ffffff;
+}
+.address li a {
+  color: var(--desc-font-color);
+}
+.address li a:hover {
+  color: var(--blue-font-color);
+  background-color: transparent;
+  text-decoration: none;
+}
+/*portfolio*/
+.btn-filter .btn-lst {
+  background-color: var(--nav-bg-color);
+  color: var(--title-font-color);
+  height: 38px;
+}
+.btn-lst:hover {
+  background-color: var(--blue-font-color);
+  color: #ffffff;
+}
+.card-data li {
+  border: 1px;
+  width: 370px;
+  height: 404px;
+  border-style: solid;
+  border-color: var(--card-portfolio-border);
+}
