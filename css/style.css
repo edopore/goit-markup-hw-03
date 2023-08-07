@@ -181,6 +181,14 @@ a:link {
   background-color: transparent;
   text-decoration: none;
 }
+.address-links {
+  width: 231px;
+  height: 92px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
 .contact-info {
   background-color: var(--title-bg-color);
 }
