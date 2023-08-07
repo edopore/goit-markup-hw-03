@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
 :root {
   --nav-bg-color: #ececec;
   --desc-font-color: #757575;
@@ -8,20 +9,26 @@
   --blue-font-color: #2196f3;
   --foot-font-color: rgba(255, 255, 255, 0.6);
   --card-portfolio-border: #eeeeee;
+  --white: #ffffff;
 }
 /*index.html*/
 /*tags*/
 body {
-  background-color: #ffffff;
+  background-color: var(--white);
   color: var(--title-font-color);
   font-family: 'Roboto', 'Raleway', sans-serif;
 }
+header {
+  border: 1px;
+  border-color: var(--nav-bg-color);
+  border-style: solid;
+}
 h1 {
-  color: #ffffff;
+  color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  letter-spacing: 6%;
+  justify-content: center;
 }
 h2 {
   color: var(--title-font-color);
@@ -50,20 +57,15 @@ a:link {
 .section {
   padding: 94px 0px;
 }
+
 /*Header*/
 .logo {
   font-family: 'Raleway', sans-serif;
-  text-align: left;
+  text-align: right;
   color: var(--blue-font-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-}
-.btn-sol {
-  background-color: var(--blue-font-color);
-  color: var(--team-bg-color);
-  width: 261px;
-  height: 50px;
 }
 .nav-bar {
   display: flex;
@@ -72,7 +74,7 @@ a:link {
   padding-left: 150px;
   padding-right: 150px;
 }
-.logo a {
+.logo > a {
   color: var(--blue-font-color);
 }
 .nav-page a {
@@ -97,23 +99,36 @@ a:link {
 .logo {
   display: inline-block;
 }
+.nav-bar ul {
+  margin: 32px 0px;
+}
 .nav-bar ul li {
   display: inline-block;
+  padding: 0px 15px;
+  font-weight: 500;
 }
-.nav-bar .nav-info {
-}
-.contact-info {
-  background-color: var(--title-bg-color);
-}
+
 /*Main*/
+/*section solution-title*/
 .solution {
   background-color: var(--title-bg-color);
 }
+.btn-sol {
+  background-color: var(--blue-font-color);
+  color: var(--team-bg-color);
+  width: 261px;
+  height: 50px;
+}
+/*Section values*/
 .values ul {
   box-sizing: content-box;
   display: inline-block;
   text-align: left;
   width: 300px;
+}
+.solution-card {
+  width: 270px;
+  height: 122px;
 }
 .solution-card h2 {
   font-weight: 700;
@@ -122,6 +137,10 @@ a:link {
 }
 .services ul li {
   display: inline-block;
+}
+/*Section team*/
+.our-team {
+  background-color: var(--team-bg-color);
 }
 .team-card li {
   border: 1px;
@@ -140,13 +159,13 @@ a:link {
 
 /*Footer*/
 .address {
-  color: #ffffff;
+  color: var(--white);
   text-align: left;
   margin-left: 215px;
   padding: 10px;
 }
 .address ul li p {
-  color: #fff;
+  color: var(--white);
 }
 .address ul {
   padding: 0;
@@ -154,15 +173,23 @@ a:link {
 .address li a {
   color: var(--desc-font-color);
 }
+.address li h2 a {
+  color: var(--blue-font-color);
+}
 .address li a:hover {
   color: var(--blue-font-color);
   background-color: transparent;
   text-decoration: none;
 }
+.contact-info {
+  background-color: var(--title-bg-color);
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
 /*portfolio.html*/
 /*Section card*/
 .btn-filter li {
   display: inline-block;
+  padding: 0px 5px;
 }
 .btn-filter .btn-lst {
   background-color: var(--nav-bg-color);
@@ -171,18 +198,30 @@ a:link {
 }
 .btn-lst:hover {
   background-color: var(--blue-font-color);
-  color: #ffffff;
+  color: var(--white);
 }
 .card-data {
   display: inline-block;
+  padding: 10px;
   margin: 0px 300px 0px 300px;
 }
-.card-data li {
-  display: inline-block;
 
+.card-info {
+  display: inline-block;
   border: 1px;
   width: 370px;
   height: 404px;
+  margin: 10px;
   border-style: solid;
   border-color: var(--card-portfolio-border);
+  text-align: left;
+}
+.card-info h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  margin: 0px 8px;
+}
+.card-info p {
+  margin: 0px 10px;
 }
