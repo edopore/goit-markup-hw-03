@@ -32,6 +32,7 @@ div h1 {
 }
 h1 {
   color: var(--white);
+  width: 650px;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -116,11 +117,16 @@ a:link {
 .title {
   background-color: var(--title-bg-color);
 }
+.container-title {
+  display: flex;
+  justify-content: center;
+}
 .btn-sol {
   background-color: var(--blue-font-color);
   color: var(--team-bg-color);
   width: 261px;
-  height: 50px;
+  font-weight: 700;
+  line-height: 30px;
 }
 /*Section values*/
 .values ul {
@@ -133,7 +139,6 @@ a:link {
 }
 .solution-card {
   width: 270px;
-  height: 122px;
 }
 .solution-card h2 {
   font-weight: 700;
@@ -156,7 +161,6 @@ a:link {
 .team-card li {
   border: 1px;
   width: 270px;
-  height: 368px;
   border-style: solid;
   border-color: var(--card-portfolio-border);
   border-radius: 0px 0px 4px 4px;
@@ -174,9 +178,6 @@ a:link {
 .address ul li p {
   color: var(--white);
 }
-.address ul {
-  padding: 0;
-}
 .address li a {
   color: var(--desc-font-color);
 }
@@ -189,12 +190,24 @@ a:link {
   text-decoration: none;
 }
 .address-links {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
   width: 231px;
-  height: 92px;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+}
+.address-footer,
+.logo-footer {
+  margin: 0 0;
+  padding: 0 0;
+}
+.address-links:nth-child(n) {
+  padding: 0px;
+  margin: 0px 0px;
 }
 .contact-info {
   background-color: var(--title-bg-color);
@@ -213,7 +226,6 @@ a:link {
   line-height: 26px;
   background-color: var(--nav-bg-color);
   color: var(--title-font-color);
-  height: 38px;
 }
 .btn-lst:hover {
   background-color: var(--blue-font-color);
@@ -228,11 +240,10 @@ a:link {
   display: inline-block;
   border: 1px;
   width: 370px;
-  height: 404px;
-  border-style: solid;
-  border-color: var(--card-portfolio-border);
   text-align: left;
   margin-bottom: 30px;
+  border-style: solid;
+  border-color: var(--card-portfolio-border);
 }
 .card-info h2 {
   font-weight: 700;
@@ -242,4 +253,7 @@ a:link {
 }
 .card-info p {
   margin: 0px 10px;
+}
+.text-info {
+  padding: 10px 10px;
 }
