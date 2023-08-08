@@ -10,83 +10,85 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="container">
+  <body>
     <header>
-      <nav class="nav-bar">
-        <h2 class="logo"><a href="./index.html">WebStudio</a></h2>
-        <ul class="nav-link-page">
-          <li class="nav-link nav-page"><a href="#">Estudio</a></li>
-          <li class="nav-link nav-page"><a href="./portfolio.html">Portafolio</a></li>
-          <li class="nav-link nav-page"><a href="#">Contactos</a></li>
-        </ul>
-        <ul class="nav-info">
-          <li class="nav-link nav-contact">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="nav-link nav-contact"><a href="tel:+525555296000">+52 55 5529 6000</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="nav-bar">
+          <h2 class="logo"><a href="./index.html">WebStudio</a></h2>
+          <ul class="nav-link-page">
+            <li class="nav-link nav-page"><a href="#">Estudio</a></li>
+            <li class="nav-link nav-page"><a href="./portfolio.html">Portafolio</a></li>
+            <li class="nav-link nav-page"><a href="#">Contactos</a></li>
+          </ul>
+          <ul class="nav-info">
+            <li class="nav-link nav-contact">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="nav-link nav-contact"><a href="tel:+525555296000">+52 55 5529 6000</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="solution section">
-        <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button type="button" class="btn btn-sol">Solicite nuestro servicio</button>
+      <section class="title section">
+        <div class="container">
+          <h1 class="title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+          <button type="button" class="btn btn-sol">Solicite nuestro servicio</button>
+        </div>
       </section>
       <section class="values section">
-        <ul>
-          <li class="solution-card">
-            <h2>ATENCIÓN A LOS DETALLES</h2>
-            <p>
-              Nos adentramos en todos los detalles y Procesos de su negocio, para asi desarrollar
-              una solución a su medida.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li class="solution-card">
-            <h2>PUNTUALIDAD</h2>
-            <p>
-              Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
-              empresa: respetar su tiempo y respetar los plazos acordados.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li class="solution-card">
-            <h2>PLANIFICACIÓN</h2>
-            <p>
-              Usted podrá observar y participar en cada fase del desarrollo y aplicación de
-              soluciones.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li class="solution-card">
-            <h2>TECNOLOGÍA MODERNA</h2>
-            <p>
-              Usamos Herramientas innovadoras para resolver las tareas asignadas. Es hora de
-              simplificar los procesos laborales.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="solution">
+            <li class="solution-card">
+              <h2>ATENCIÓN A LOS DETALLES</h2>
+              <p>
+                Nos adentramos en todos los detalles y Procesos de su negocio, para asi desarrollar
+                una solución a su medida.
+              </p>
+            </li>
+            <li class="solution-card">
+              <h2>PUNTUALIDAD</h2>
+              <p>
+                Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
+                empresa: respetar su tiempo y respetar los plazos acordados.
+              </p>
+            </li>
+            <li class="solution-card">
+              <h2>PLANIFICACIÓN</h2>
+              <p>
+                Usted podrá observar y participar en cada fase del desarrollo y aplicación de
+                soluciones.
+              </p>
+            </li>
+            <li class="solution-card">
+              <h2>TECNOLOGÍA MODERNA</h2>
+              <p>
+                Usamos Herramientas innovadoras para resolver las tareas asignadas. Es hora de
+                simplificar los procesos laborales.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="services section">
-        <h2>A qué nos dedicamos</h2>
-        <ul>
-          <li class="services-images">
-            <img src="./images/keyboard.jpg" alt="service 1" width="370" />
-          </li>
-          <li class="services-images">
-            <img src="./images/phone.jpg" alt="service 2" width="370" />
-          </li>
-          <li class="services-images">
-            <img src="./images/color-palette.jpg" alt="service 3" width="370" />
-          </li>
-        </ul>
+        <div class="container">
+          <h2>A qué nos dedicamos</h2>
+          <ul class="services-lists">
+            <li class="services-images">
+              <img src="./images/keyboard.jpg" alt="service 1" width="370" />
+            </li>
+            <li class="services-images">
+              <img src="./images/phone.jpg" alt="service 2" width="370" />
+            </li>
+            <li class="services-images">
+              <img src="./images/color-palette.jpg" alt="service 3" width="370" />
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="our-team section">
-        <h2>Nuestro Equipo</h2>
-        <div>
+        <div class="container">
+          <h2>Nuestro Equipo</h2>
           <ul class="team-card">
             <li>
               <img src="./images/andres.jpg" alt="andres-cubo" width="270" />
@@ -113,24 +115,26 @@
       </section>
     </main>
     <footer class="contact-info">
-      <address class="address">
-        <ul>
-          <li>
-            <h2 class="logo"><a href="./index.html">WebStudio</a></h2>
-          </li>
-        </ul>
-        <ul class="address-links">
-          <li>
-            <p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
-          </li>
-          <li>
-            <a href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:+525555296000">+52 55 5529 6000</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <address class="address">
+          <ul>
+            <li>
+              <h2 class="logo"><a href="./index.html">WebStudio</a></h2>
+            </li>
+          </ul>
+          <ul class="address-links">
+            <li>
+              <p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+            </li>
+            <li>
+              <a href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li>
+              <a href="tel:+525555296000">+52 55 5529 6000</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
