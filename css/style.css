@@ -238,12 +238,9 @@ a:link {
 }
 .card-info {
   display: inline-block;
-  border: 1px;
   width: 370px;
   text-align: left;
   margin-bottom: 30px;
-  border-style: solid;
-  border-color: var(--card-portfolio-border);
 }
 .card-info h2 {
   font-weight: 700;
@@ -251,9 +248,14 @@ a:link {
   line-height: 36px;
   margin: 0px 8px;
 }
+.img {
+  display: block;
+}
 .card-info p {
   margin: 0px 10px;
 }
 .text-info {
+  display: block;
   padding: 10px 10px;
+  border: 1px solid var(--nav-bg-color);
 }
